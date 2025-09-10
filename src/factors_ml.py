@@ -33,7 +33,7 @@ class SurvivalNet(nn.Module):
             nn.BatchNorm1d(64),
             nn.Dropout(0.3)
         )
-        
+        # clinical_dim: raw clinical inputs dimensions, age, sex, medical histories, treatment
         self.clinical_encoder = nn.Sequential(
             nn.Linear(clinical_dim, 32),
             nn.ReLU(),
