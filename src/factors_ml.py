@@ -2,8 +2,6 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import RandomForestClassifier
-from xgboost import XGBRegressor
 from lifelines import CoxPHFitter
 from typing import Tuple, Dict, Any, List
 import torch
